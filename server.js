@@ -2,9 +2,26 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const session = require("express-session");
-const connect = require("./schemas");
+const connect = require("./schema");
 
 connect();
+
+const corsOptions = {
+    origin: true,
+    credentials: true
+};
+
+app.use(
+    session({
+        resave: false,
+        saveUninitialized: true,
+        secret: "WG",
+        cookie :{
+            httpOnly: true,
+            secure: false
+        }
+    })
+)
 
 app.use(cors(corsOptions));
 
