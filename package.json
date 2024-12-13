@@ -1,0 +1,22 @@
+{
+  "name": "write",
+  "version": "1.0.0",
+  "description": "기록",
+  "main": "server.js",
+  "scripts": {
+    "test": "1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "vlog_backend"
+  },
+  "keywords": [
+    "vlog"
+  ],
+  "author": "wg",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "nodemon": "^3.1.7"
+  }
+}
