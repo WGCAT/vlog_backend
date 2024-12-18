@@ -32,5 +32,5 @@ app.use("/member", require("./router/member"));
 app.use("/board", require("./router/board"));
 
 app.listen(8080, () => {
-    console.log("listen umm..")
+    console.log("서버 연결 성공")
 });
