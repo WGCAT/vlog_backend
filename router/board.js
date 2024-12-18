@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const board = require("../")
+const board = require("../schema/board")
 
 router.post("/delete", async (req, res) => {
     try {

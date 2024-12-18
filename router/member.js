@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const User = require("../schemas/user");
+const User = require("../schema/user");
 const crypto = require("crypto");
 
 //회원가입
