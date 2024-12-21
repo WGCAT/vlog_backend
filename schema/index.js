@@ -5,7 +5,7 @@ module.exports = () => {
     const connect = async () => {
         try {
             if (process.env.NODE_ENV !== "production") {
-                mongoose.set("debug", true); // 디버그 모드 설정
+                mongoose.set("debug", true);
             }
 
             await mongoose.connect("mongodb://localhost:27017/vlog", {
@@ -27,7 +27,7 @@ mongoose.connection.on("disconnected", () => {
     connect();
 });
 
-require("./user")
-require("./board")
+require("./users")
+require("./boards")
 
 };
