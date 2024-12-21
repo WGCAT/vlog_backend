@@ -16,21 +16,22 @@ app.use(
         resave: false,
         saveUninitialized: true,
         secret: "WG",
-        cookie :{
+        cookie: {
             httpOnly: true,
             secure: false
         }
     })
-)
+);
 
+app.options("*", cors(corsOptions));
 app.use(cors(corsOptions));
 
-app.use(express.json);
-app.use(express.urlencoded({extended:true}));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.use("/member", require("./router/member"));
 app.use("/board", require("./router/board"));
 
 app.listen(8080, () => {
-    console.log("서버 연결 성공")
+    console.log("서버 연결 성공");
 });
