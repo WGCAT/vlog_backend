@@ -1,3 +1,5 @@
+![](https://velog.velcdn.com/images/wg_cat/post/b73db052-f9eb-4d6e-9ea4-db09821c7c6f/image.png)
+
 ## 1. 개발동기
 하루마다 공부한 내용을 업로드하는 사이트 제작
 
